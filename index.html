@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+
+<body>
+    <nav>
+        <a href="http://aphysia.cn">❤️秦怀杂货店❤️</a>
+    </nav>
+    <div id="app"></div>
+    <!-- docsify-edit-on-github -->
+    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+</body>
+<script>
+    window.$docsify = {
+        name: 'JvmNote',
+        repo: 'https://github.com/Damaer/Coding',
+        maxLevel: 5,//最大支持渲染的标题层级
+        subMaxLevel: 3,
+        homepage: 'README.md',
+        coverpage: true,
+        loadSidebar: true,
+        auto2top: true,//切换页面后是否自动跳转到页面顶部
+        //全文搜索
+        search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: 'auto',
+            placeholder: '搜索',
+            noData: '找不到结果',
+            // 搜索标题的最大程级, 1 - 6
+            depth: 4,
+            hideOtherSidebarContent: false,
+            namespace: 'CodeSolution'
+        }
+    }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!--Java代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<!--Java代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+<!--sql代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-sql.js"></script>
+<!--shell代码高亮-->
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+<!--全文搜索,直接用官方提供的无法生效-->
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<!-- 复制到剪贴板 -->
+<script src="//unpkg.com/npm/docsify-copy-code"></script>
+<!-- 字数统计 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<!-- 上一篇/下一篇 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!-- 图片缩放插件 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<!--统计访问量插件-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+
+</html>
